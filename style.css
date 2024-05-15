@@ -142,11 +142,12 @@ html,body{
     
 }
 
-.hed:hover .ri-arrow-right-up-line{
+.hed:hover #arrow{
     transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    /* -ms-transform: rotate(45deg); */
+    transition: 0.4s;
 }
-
-
 
 .page1footer .iconset{
     display: flex;
@@ -207,7 +208,7 @@ html,body{
 
 .page3{
     width: 100%;
-    background-color: black;
+    background-color: rgb(0, 0, 0);
     display: flex;
     align-items: center;
     gap: 100px;
@@ -217,6 +218,8 @@ html,body{
 
 .page3 img{
     height: 250px;
+    width: 250px;
+    border-radius: 50%;
 }
 
 .about {
@@ -245,6 +248,15 @@ html,body{
     padding: 6px 22px;
     border-radius: 100px;
     text-decoration: none;
+    background: linear-gradient(currentColor, currentColor) bottom / 0 .1em no-repeat;
+    transition: 0.5s background-size;
+}
+
+.page3 a:hover{
+    background-color: #fff;
+    color: #A3A3A3;
+    border: 1px solid #A3A3A3;
+    transition: 1s;
 }
 
 .subscribe{
@@ -267,6 +279,14 @@ html,body{
     color: #fff;
     font-size: 15px;
 }
+
+.subscribe h4:hover{
+
+    background-size: 100% .1em;
+    background-position: left bottom;
+    
+}
+
 
 .footer{
     background-color: black;

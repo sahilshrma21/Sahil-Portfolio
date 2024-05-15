@@ -98,6 +98,12 @@ document.querySelectorAll(".elem").forEach(function (elem) {
     });
     });
 });
+    // var heading = document.querySelector(".elem h1");
+    // elem.addEventListener("mousemove",()=>{
+    //     heading.style.color = "#606060";
+    //     heading.style.transition = "1s";
+    //     heading.style.transform = "translateX(30)";
+    // })
 
 }
 
